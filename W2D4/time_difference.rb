@@ -94,9 +94,13 @@ end
 
 def fourth_anagram?(str1, str2)
     return false if str1.length != str2.length
-    anagram_hash = {}
+    anagram_hash = Hash.new(0)
 
-    str1.each { |char| anagram }
+    str1.each_char { |char| anagram_hash[char] += 1 }
+    str2.each_char { |char| anagram_hash[char] -= 1 }
+
+    anagram_hash.values.all? { |val| val == 0 }
+
 
 end
 
