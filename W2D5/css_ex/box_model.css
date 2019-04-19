@@ -1,0 +1,33 @@
+div {
+  /* box-sizing: border-box; */
+  height: 200px;
+  width: 200px;
+  border: 1px;
+  margin: 50px;
+  padding: 100px;
+}
+
+#first-div {
+  background-color: #39cccc;
+  border: 5px solid black
+
+}
+
+#second-div {
+  background-color: #ff4136;
+  border: 5px dashed white
+}
+
+.paragraph{
+  background-color: blueviolet;
+  box-shadow: #ff4136;
+  margin-block-start: 20px;
+
+}
+
+.image1container{
+  width: 200px;
+  height: 600px;
+  background-color: aquamarine;
+
+}
