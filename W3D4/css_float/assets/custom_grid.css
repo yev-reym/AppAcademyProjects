@@ -1,0 +1,13 @@
+ /* PUT FLUID GRID CODE HERE */
+
+.aside_1 {
+display:grid;
+float:left;
+width: 60%;
+clear:none;
+}
+
+#section_1 {
+  float:left;
+  width: 10%
+}
