@@ -1,0 +1,12 @@
+
+<h1>  OH MY GATOS!!!    </h1>
+<h2> PLEASE SELECT YOUR PUSSYCAT </h2 >
+
+
+
+<% @cats.each do |cat|  %>
+     <%= cat.name.capitalize  %>  
+    <a href= '<%=cat_url(cat)%>'> See My Kitty </a>
+     <br>
+<% end %>
+

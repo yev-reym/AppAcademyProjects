@@ -1,0 +1,38 @@
+<style>
+thead, td {
+    background-color: #808000;
+    color: #fff;
+}
+
+table,
+td {
+    border: 3px solid #333;
+    size: 100px;
+    border-color: #800000
+}
+
+</style>
+
+<table> 
+    <thead>
+        <tr>
+            <th colspan="5"> KITTY KAT </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Name</td>
+            <td>Birthday</td>
+            <td>Sex</td>
+          	<td>Color</td>
+          	<td>Description</td>
+        </tr>
+      <tr>
+        <td>  <%= @cat.name.capitalize %> </td>
+        <td> <%= @cat.birth_date %> </td>
+        <td> <%= @cat.sex  %> </td>
+        <td> <%= @cat.color.capitalize %> </td>
+        <td> <%= @cat.description %> </td>
+      </tr>
+    </tbody>
+</table>
