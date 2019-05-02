@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <title>MusicBuddy</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <header class="opener">
+  <h1>🎶Music Buddy🎶</h1>
+  </header>
+
+  <body>
+   <header>
+  <% if logged_in? %>
+  <form action="<%= session_url %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE" >
+    <%= auth_token%>
+
+   <input type="submit" value="🎵Log out🎵">
+   </form>
+   <a href="<%= new_band_url %>">Add a Band</a>
+  <% else%>
+     <a class ="sign-up" href="<%= new_user_url%>">Sign Up!</a>
+    <a class ="log-in" href="<%= new_session_url %>">Log In</a>
+   <% end%>
+  </header>
+  <a class ="log-in" href="<%= bands_url %>">Check out Bands</a>
+    <%= yield %>
+  </body>
+</html>

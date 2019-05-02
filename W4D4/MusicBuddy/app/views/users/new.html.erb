@@ -1,0 +1,14 @@
+<h1>Put in your credentials to sign up now!</h1>
+
+<form action="<%= users_url %>" method="POST"> 
+        <%= auth_token %>
+
+    <label for="email" >🎵Please input valid email🎵</label>
+<input type="text" id="email" name="user[email]" value="" ><br>
+
+    <label for="password" >🎵Please input password of minimum 6 characters🎵</label>
+<input type="password" id ="password" name="user[password]" value="" ><br>
+
+<input type="submit"  value="Sign Up Now!" ><br>
+
+</form>

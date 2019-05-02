@@ -1,0 +1,14 @@
+<h1>Log in to start listening!</h1>
+
+<form action="<%= session_url%>" method="POST"> 
+        <%= auth_token %>
+
+    <label for="email" >🎵Please input valid email🎵</label>
+<input type="text" id="email" name="user[email]" value="" ><br>
+
+    <label for="password" >🎵Please input password of minimum 6 characters🎵</label>
+<input type="password" id ="password" name="user[password]" value="" ><br>
+
+<input type="submit"  value="Get me to the beats" ><br>
+
+</form>
