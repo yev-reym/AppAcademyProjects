@@ -1,0 +1,54 @@
+/* PHASE 9: Forms */
+
+.post_form{
+    width: 600px;
+    height: 200px;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+    
+
+}
+
+.thumbnail {
+    float: left;
+    margin: 5px;
+
+}
+
+.content-main{
+    display: flex;
+    flex-direction: row;
+}
+
+.post {
+    background-color: white;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.post_form {
+    float: left;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .post_form{
+ align-items: center;
+} */
+
+.post {
+    height: 100px;
+    align-items: flex-start;
+}
+
+.title, .body{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}

@@ -1,0 +1,42 @@
+.towers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: pink;
+    height: 200px;
+    width: 700px;
+}
+
+ul {
+    border-bottom: 10px solid black;
+    width: 150px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.disk_0 {
+    background-color: aquamarine;
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.disk_1 {
+    background-color: aquamarine;
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.disk_2 {
+    background-color: aquamarine;
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+
