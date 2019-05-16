@@ -39,8 +39,27 @@ $l.extend = function(arg1, ...arg2){
 };
 
 $l.ajax = function(options){
-    
+    const defaultOps = {method: 'get', url: '*/*'};
+    $l.extend(defaultOps,options);
+
+    const xhr = new XMLHttpRequest();
+
+    xhr.open(defaultOps.method, defaultOps.url);
+
+    xhr.onload = function () {
+        console.log(xhr.status);
+        console.log(xhr.responseType);
+        console.log(xhr.response); 
+    };
+
+    if(options.data === undefined){
+        xhr.send();
+    } else {
+        xhr.send(options.data);
+    }
 };
+
+
 
 // function ClickEvent() {
 //     console.log("this should be after page loaded");
