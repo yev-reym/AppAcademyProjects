@@ -2,10 +2,11 @@ import {connect} from 'react-redux';
 import Greeting from './greeting';
 import {logout} from '../../actions/session_actions';
 
-const msp = ({session}) => {
-    const {currentUser} = session;
+const msp = (state) => {
+    const {entities, session} = state;
+    const {users} = entities;
     return {
-        currentUser
+        currentUser: users[session.id]
     };
 };
 
